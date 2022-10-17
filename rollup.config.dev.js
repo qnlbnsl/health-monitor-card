@@ -13,7 +13,6 @@ import { ignoreTextfieldFiles } from './elements/ignore/textfield';
 import { ignoreSelectFiles } from './elements/ignore/select';
 import { ignoreSwitchFiles } from './elements/ignore/switch';
 
-const input = ['src/boilerplate-card.ts']
 
 const serveopts = {
   contentBase: ['./dist'],
@@ -42,7 +41,7 @@ const plugins= [
   ]
 
 export default {
-  input: [...input],
+  input: ['src/health-monitoring-card.ts'],
   output: {
     sourcemap: true,
     dir: './dist',

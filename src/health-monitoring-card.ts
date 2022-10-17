@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { LitElement, html, TemplateResult, css, PropertyValues, CSSResultGroup } from 'lit';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { customElement, property, state } from 'lit/decorators';
 import {
   HomeAssistant,
@@ -33,6 +34,7 @@ console.info(
 
 // TODO Name your custom element
 @customElement('health-monitoring-card')
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export class HealthMonitoringCard extends LitElement {
   public static async getConfigElement(): Promise<LovelaceCardEditor> {
     await import('./editor');
@@ -61,7 +63,7 @@ export class HealthMonitoringCard extends LitElement {
     }
 
     this.config = {
-      name: 'Boilerplate',
+      name: 'Health Monitoring',
       ...config,
     };
   }
@@ -95,7 +97,7 @@ export class HealthMonitoringCard extends LitElement {
           hasDoubleClick: hasAction(this.config.double_tap_action),
         })}
         tabindex="0"
-        .label=${`Boilerplate: ${this.config.entity || 'No Entity Defined'}`}
+        .label=${`Health Monitoring: ${this.config.entity || 'No Entity Defined'}`}
       ></ha-card>
     `;
   }
