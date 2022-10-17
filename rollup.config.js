@@ -16,7 +16,7 @@ import { ignoreSelectFiles } from './elements/ignore/select';
 import { ignoreSwitchFiles } from './elements/ignore/switch';
 
 const dev = process.env.ROLLUP_WATCH;
-const input = ['src/boilerplate-card.ts']
+const input = ['src/health-monitoring-card.ts']
 const serveopts = {
   contentBase: ['./release'],
   host: '0.0.0.0',
